@@ -3,6 +3,8 @@
 
 **Health Sathi** is a multimodal AI health assistant designed to bridge the gap between patients and medical clarity. It uses Google's Gemini models to analyze medical records (PDFs, Images) and voice symptoms, providing clinical guidance that is verified by doctors.
 
+Hosted Website:- (https://aistudio.google.com/apps/drive/1vmXpdkEHkQQ2oV4sCGarqSdhFJQaLWVL?fullscreenApplet=true&showPreview=true&showAssistant=true)
+
 ## 🚀 Key Features
 
 ### For Patients 🧘‍♂️
@@ -116,9 +118,3 @@ To deploy this app live:
     ```
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
-*Powered by Google Gemini* ✨
