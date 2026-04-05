@@ -26,12 +26,16 @@ const MedicationScheduleCard: React.FC<{ meds: MedicationDetail[] }> = ({ meds }
       <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {meds.map((med, idx) => (
           <div key={idx} className="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm hover:border-indigo-200 transition-colors h-full flex flex-col">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h4 className="font-bold text-slate-900 text-sm line-clamp-1" title={med.name}>{med.name}</h4>
-                <p className="text-[11px] text-indigo-600 font-bold uppercase">{med.dosage}</p>
+            <div className="flex gap-4 items-start mb-3">
+              <div className="flex-1 min-w-0">
+                <h4 className="font-bold text-slate-900 text-sm leading-tight mb-1 break-words" title={med.name}>
+                  {med.name}
+                </h4>
+                <p className="text-[10px] text-indigo-600 font-bold uppercase tracking-tight">
+                  {med.dosage}
+                </p>
               </div>
-              <div className="bg-indigo-50 px-2 py-1 rounded-lg text-[10px] font-bold text-indigo-700 uppercase whitespace-nowrap">
+              <div className="bg-indigo-50 px-2.5 py-1.5 rounded-xl text-[9px] font-black text-indigo-700 uppercase whitespace-nowrap shrink-0 shadow-sm border border-indigo-100/50">
                 {med.frequency}
               </div>
             </div>
@@ -39,7 +43,7 @@ const MedicationScheduleCard: React.FC<{ meds: MedicationDetail[] }> = ({ meds }
               <div className="h-6 w-6 bg-white rounded-lg flex items-center justify-center text-xs shadow-sm">🕒</div>
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-0.5">Timing</p>
-                <p className="text-xs text-slate-700 font-medium truncate" title={med.timing}>{med.timing}</p>
+                <p className="text-xs text-slate-700 font-medium whitespace-normal break-words" title={med.timing}>{med.timing}</p>
               </div>
             </div>
             {med.instructions && med.instructions.toLowerCase() !== "none" && (
