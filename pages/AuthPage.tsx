@@ -113,8 +113,8 @@ export const AuthPage = () => {
                 className="group relative w-full p-1 rounded-3xl bg-gradient-to-br from-slate-100 to-slate-200 hover:from-teal-400 hover:to-emerald-500 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-teal-500/20"
               >
                 <div className="relative bg-white h-full rounded-[1.3rem] p-6 flex items-center gap-5 transition-colors group-hover:bg-white/95">
-                   <div className="h-14 w-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner">
-                     🧘‍♂️
+                   <div className="h-14 w-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner">
+                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/><path d="M6.5 10.5c0 3 2 5 5.5 5s5.5-2 5.5-5"/><path d="M9 14.5l-2.5 5"/><path d="M15 14.5l2.5 5"/><path d="M9 17h6"/></svg>
                    </div>
                    <div className="text-left">
                      <h3 className="font-bold text-slate-800 text-lg group-hover:text-teal-700 transition-colors">Patient Portal</h3>
@@ -132,8 +132,8 @@ export const AuthPage = () => {
                 className="group relative w-full p-1 rounded-3xl bg-gradient-to-br from-slate-100 to-slate-200 hover:from-indigo-400 hover:to-blue-500 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-indigo-500/20"
               >
                 <div className="relative bg-white h-full rounded-[1.3rem] p-6 flex items-center gap-5 transition-colors group-hover:bg-white/95">
-                   <div className="h-14 w-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-3xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner">
-                     👨‍⚕️
+                   <div className="h-14 w-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner">
+                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
                    </div>
                    <div className="text-left">
                      <h3 className="font-bold text-slate-800 text-lg group-hover:text-indigo-700 transition-colors">Doctor Portal</h3>

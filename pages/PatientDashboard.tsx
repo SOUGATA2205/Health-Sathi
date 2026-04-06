@@ -40,7 +40,9 @@ const MedicationScheduleCard: React.FC<{ meds: MedicationDetail[] }> = ({ meds }
               </div>
             </div>
             <div className="flex items-center gap-2 mt-auto pt-3 p-2 bg-slate-50 rounded-xl">
-              <div className="h-6 w-6 bg-white rounded-lg flex items-center justify-center text-xs shadow-sm">🕒</div>
+              <div className="h-6 w-6 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                <svg className="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-0.5">Timing</p>
                 <p className="text-xs text-slate-700 font-medium whitespace-normal break-words" title={med.timing}>{med.timing}</p>
@@ -485,8 +487,11 @@ export const PatientDashboard: React.FC = () => {
                 >
                    {selectedImage || selectedPdf ? (
                       <>
-                        <div className="h-14 w-14 bg-gradient-to-br from-teal-100 to-emerald-100 text-teal-600 rounded-2xl flex items-center justify-center text-3xl shadow-sm border border-teal-200 group-hover:scale-110 transition-transform">
-                           {selectedPdf ? '📄' : '🖼️'}
+                        <div className="h-14 w-14 bg-gradient-to-br from-teal-100 to-emerald-100 text-teal-600 rounded-2xl flex items-center justify-center shadow-sm border border-teal-200 group-hover:scale-110 transition-transform">
+                           {selectedPdf 
+                             ? <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                             : <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                           }
                         </div>
                          <div className="text-center">
                            <p className="text-sm font-bold text-teal-800">File Received</p>
@@ -524,8 +529,8 @@ export const PatientDashboard: React.FC = () => {
                        onClick={() => setIsDoctorDropdownOpen(!isDoctorDropdownOpen)}
                        className={`w-full h-full min-h-[160px] rounded-[2rem] border-2 transition-all duration-300 flex flex-col items-center justify-center p-6 gap-4 ${selectedDoctorId ? 'bg-indigo-50/80 border-indigo-200 shadow-lg shadow-indigo-500/10' : 'bg-slate-50/50 border-slate-100 hover:border-indigo-300 hover:bg-indigo-50/40 hover:scale-[1.02] hover:shadow-xl hover:shadow-indigo-500/5'}`}
                     >
-                       <div className={`h-14 w-14 rounded-2xl flex items-center justify-center text-3xl shadow-sm border group-hover:scale-110 transition-all ${selectedDoctorId ? 'bg-white text-indigo-600 border-indigo-200' : 'bg-white text-indigo-400 border-slate-200'}`}>
-                          👨‍⚕️
+                       <div className={`h-14 w-14 rounded-2xl flex items-center justify-center shadow-sm border group-hover:scale-110 transition-all ${selectedDoctorId ? 'bg-white text-indigo-600 border-indigo-200' : 'bg-white text-indigo-400 border-slate-200'}`}>
+                          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
                        </div>
                        <div className="text-center">
                           <p className={`text-sm font-bold ${selectedDoctorId ? 'text-indigo-900' : 'text-slate-700'}`}>
