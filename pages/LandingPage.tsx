@@ -226,7 +226,7 @@ export const LandingPage: React.FC = () => {
 
             <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8 w-full relative">
               {[
-                { id: "CH 1", title: "Cardiology", emoji: "❤️", desc: "Hypertension thresholds: Stage 1 (130/80) to Crisis (180/120).", warning: "BP > 180/120", color: "red", delay: "0s" },
+                { id: "CH 1", title: "Cardiology", emoji: "🫀", desc: "Hypertension thresholds: Stage 1 (130/80) to Crisis (180/120).", warning: "BP > 180/120", color: "red", delay: "0s" },
                 { id: "CH 2", title: "Metabolic", emoji: "🍭", desc: "HbA1c & Glucose monitoring. Verified Low GI food exchange lists.", warning: "Sugar < 70 mg/dL", color: "amber", delay: "2s", offset: "sm:translate-y-12" },
                 { id: "CH 3", title: "Respiratory", emoji: "🫁", desc: "O2 Saturation Benchmarks (<94%) and fever hydration.", warning: "ER if O2 < 94%", color: "blue", delay: "1s" },
                 { id: "CH 4", title: "Renal", emoji: "🧪", desc: "Creatinine markers (0.7-1.3) and GERD acidity protocols.", warning: "Goal: 0.7-1.3 mg/dL", color: "emerald", delay: "3s", offset: "sm:translate-y-12" }
