@@ -298,7 +298,7 @@ export const LandingPage: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="h-8 w-8 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 border border-emerald-500/20 shadow-inner">✓</div>
-                  Direct Inbox Access
+                  Direct Feedback
                 </div>
               </div>
             </div>
