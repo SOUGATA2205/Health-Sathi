@@ -114,7 +114,7 @@ export const AuthPage = () => {
               >
                 <div className="relative bg-white h-full rounded-[1.3rem] p-6 flex items-center gap-5 transition-colors group-hover:bg-white/95">
                    <div className="h-14 w-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner">
-                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/><path d="M6.5 10.5c0 3 2 5 5.5 5s5.5-2 5.5-5"/><path d="M9 14.5l-2.5 5"/><path d="M15 14.5l2.5 5"/><path d="M9 17h6"/></svg>
+                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
                    </div>
                    <div className="text-left">
                      <h3 className="font-bold text-slate-800 text-lg group-hover:text-teal-700 transition-colors">Patient Portal</h3>
