@@ -392,7 +392,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="mt-32 pt-12 border-t border-white/5 text-center">
             <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.4em]">
-              © 2025 Health Sathi AI. All rights reserved. Built with Multimodal Precision.
+              © 2026 Health Sathi AI. All rights reserved. Built with Multimodal Precision.
             </p>
           </div>
         </div>
