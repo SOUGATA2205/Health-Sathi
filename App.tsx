@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { HashRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { useAppStore } from './store';
 import { UserRole } from './types';
 import { PatientDashboard } from './pages/PatientDashboard';
@@ -90,6 +91,7 @@ const App: React.FC = () => {
             </ProtectedRoute>
           } />
         </Routes>
+        <Analytics />
       </div>
     </HashRouter>
   );
